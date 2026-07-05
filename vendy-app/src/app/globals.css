@@ -1,0 +1,78 @@
+@import url("https://api.fontshare.com/v2/css?f[]=jeko@700,800,900&display=swap");
+@import "tailwindcss";
+
+:root {
+  --vendy-purple: #6044ff;
+  --vendy-purple-soft: #eeeaff;
+  --vendy-coral: #6044ff;
+  --vendy-coral-soft: #eeeaff;
+  --vendy-pink: #ed9aff;
+  --vendy-green: #a0ff83;
+  --vendy-black: #000000;
+  --vendy-bg-warm: #ffffff;
+  --vendy-surface: #ffffff;
+  --vendy-soft-gray: #f2f4f7;
+  --vendy-border: #e4e4ea;
+  --vendy-text: #000000;
+  --vendy-text-secondary: #717171;
+  --vendy-text-muted: #a3a3a3;
+  --vendy-trust-green: #a0ff83;
+  --vendy-warning: #ea580c;
+  --vendy-progress: #6044ff;
+}
+
+@theme inline {
+  --color-vendy-purple: var(--vendy-purple);
+  --color-vendy-purple-soft: var(--vendy-purple-soft);
+  --color-vendy-coral: var(--vendy-coral);
+  --color-vendy-coral-soft: var(--vendy-coral-soft);
+  --color-vendy-pink: var(--vendy-pink);
+  --color-vendy-green: var(--vendy-green);
+  --color-vendy-black: var(--vendy-black);
+  --color-vendy-bg: var(--vendy-bg-warm);
+  --color-vendy-surface: var(--vendy-surface);
+  --color-vendy-soft: var(--vendy-soft-gray);
+  --color-vendy-border: var(--vendy-border);
+  --color-vendy-text: var(--vendy-text);
+  --color-vendy-secondary: var(--vendy-text-secondary);
+  --color-vendy-muted: var(--vendy-text-muted);
+  --color-vendy-warning: var(--vendy-warning);
+  --color-vendy-progress: var(--vendy-progress);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-brand: "Jeko", var(--font-geist-sans), system-ui, sans-serif;
+  --radius-vendy: 1rem;
+  --radius-vendy-lg: 1.25rem;
+  --radius-vendy-xl: 1.5rem;
+  --radius-vendy-2xl: 1.75rem;
+  --radius-vendy-3xl: 2rem;
+  --shadow-vendy: 0 4px 24px -4px rgb(0 0 0 / 0.08);
+  --shadow-vendy-lg: 0 8px 32px -8px rgb(0 0 0 / 0.12);
+  --shadow-vendy-bold: 0 12px 40px -8px rgb(96 68 255 / 0.35);
+}
+
+body {
+  background: var(--vendy-bg-warm);
+  color: var(--vendy-text);
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
+}
+
+.font-brand {
+  font-family: var(--font-brand);
+  font-weight: 900;
+  letter-spacing: -0.02em;
+}
+
+.surface-gray {
+  background-color: var(--vendy-soft-gray);
+  border-radius: var(--radius-vendy-2xl);
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}

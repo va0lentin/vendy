@@ -1,0 +1,24 @@
+# OS
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Dependencies & build (Next.js app)
+vendy-app/node_modules/
+vendy-app/.next/
+vendy-app/out/
+vendy-app/build/
+
+# Env & secrets
+.env
+.env.*
+!.env.example
+
+# Logs & cache
+*.log
+npm-debug.log*
+vendy-app/*.tsbuildinfo
+
+# IDE (optional local)
+.idea/
+*.swp
